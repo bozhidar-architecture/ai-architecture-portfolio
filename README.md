@@ -41,16 +41,24 @@ ai-architecture-portfolio/
 ## 🛠 Tools & Frameworks
 - **Architecture Design:** Lucidchart, Draw.io, Mermaid
 - **AI Services:** Azure AI, Cognitive Services, OpenAI
-- **Governance:** Responsible AI principles, IEEE CertifAIEd™
+- **Governance:** Responsible AI principles
 - **Portfolio Hosting:** GitHub Pages
 
 ## 📜 Certifications
 - ✅ Microsoft Certified: Azure AI Fundamentals (AI-900)
 - 🎯 Next: Azure AI Engineer Associate (AI-102), Responsible AI Certification
 
+## 🚧 Work in Progress
+This portfolio is evolving. Upcoming updates:
+- [ ] Upload architecture diagrams for SLA Monitoring
+- [ ] Add Responsible AI governance checklist
+- [ ] Publish ROI analysis for provisioning workflow
+- [ ] Complete AI-102 certification
+- [ ] Update badges
+
+
 ## 🌍 Connect
-- **LinkedIn:** [Your LinkedIn URL]
-- **Email:** [Your Professional Email]
+- **LinkedIn:** www.linkedin.com/in/bozhidar
 
 ### 🔖 Badges
 
