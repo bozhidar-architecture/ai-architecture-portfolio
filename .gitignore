@@ -1,0 +1,28 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor backups and temp files
+*.swp
+*.bak
+*.tmp
+
+# Logs
+*.log
+
+# Design tool backups
+*.drawio.bkp
+*.vsdx.bkp
+
+# Node or build artefacts (if using GitHub Pages with Jekyll)
+_site/
+*.gem
+Gemfile.lock
+
+# IDE settings
+.vscode/
+.idea/
+
+# Misc
+*.zip
+*.tar.gz
