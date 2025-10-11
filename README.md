@@ -14,13 +14,14 @@ This portfolio demonstrates **architecture thinking**, **Responsible AI principl
 ---
 
 ## 📂 Portfolio Structure
+```
 ai-architecture-portfolio/
 │── README.md                # Overview and case studies
 │── solution-architectures/  # Architecture diagrams + integration docs
 │── governance-compliance/   # Responsible AI checklists
 │── business-cases/          # ROI models
 │── assets/                  # Diagrams and visuals
-
+```
 ## 🔍 Featured Projects
 ### 1. **AI-Driven SLA Monitoring for Telco**
 - **Objective:** Predict SLA breaches using AI analytics.
