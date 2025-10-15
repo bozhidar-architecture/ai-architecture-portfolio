@@ -72,5 +72,5 @@ This portfolio is evolving. Upcoming updates:
 - **LinkedIn:** www.linkedin.com/in/bozhidar
 
 ### 🔖 Badges
-[/assets/images/https://www.credly.com/badges/79ac1094-b563-4f15-80bd-3b4efd8ccdf0/public_url](https://www.credly.com/badges/79ac1094-b563-4f15-80bd-3b4efd8ccdf0/public_url)
+[./assets/images/https://www.credly.com/badges/79ac1094-b563-4f15-80bd-3b4efd8ccdf0/public_url](https://www.credly.com/badges/79ac1094-b563-4f15-80bd-3b4efd8ccdf0/public_url)
 
