@@ -72,7 +72,7 @@ This portfolio is evolving. Upcoming updates:
 - **LinkedIn:** www.linkedin.com/in/bozhidar
 
 ### 🔖 Badges
-[./assets/images/accessibility-in-action.png](https://www.credly.com/badges/79ac1094-b563-4f15-80bd-3b4efd8ccdf0/public_url)
-[./assets/images/skillup-ai-vibe-coding-challenge.png](https://www.credly.com/badges/f77dcdaa-96c2-43d8-8fd5-30900d90ef72/public_url)
+![./assets/images/accessibility-in-action.png](https://www.credly.com/badges/79ac1094-b563-4f15-80bd-3b4efd8ccdf0/public_url)
+![./assets/images/skillup-ai-vibe-coding-challenge.png](https://www.credly.com/badges/f77dcdaa-96c2-43d8-8fd5-30900d90ef72/public_url)
 
 
