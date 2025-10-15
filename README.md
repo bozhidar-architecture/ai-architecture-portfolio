@@ -45,7 +45,18 @@ ai-architecture-portfolio/
 - **Portfolio Hosting:** GitHub Pages
 
 ## 📜 Certifications
+
 - ✅ Microsoft Certified: Azure AI Fundamentals (AI-900)
+- ✅ Microsoft Certified: Azure Network Engineer Associate
+- ✅ Microsoft Certified: Security, Compliance, and Identity Fundamentals
+- ✅ Microsoft Certified: Azure Fundamentals
+  
+- ✅ KCNA: Kubernetes and Cloud Native Associate
+
+- ✅ Red Hat Certified System Administrator (RHCSA)
+- ✅ Red Hat Certified OpenShift Administrator
+- ✅ Red Hat Certified Specialist in Containers and Kubernetes
+  
 - 🎯 Next: Azure AI Engineer Associate (AI-102), Responsible AI Certification
 
 ## 🚧 Work in Progress
@@ -61,5 +72,5 @@ This portfolio is evolving. Upcoming updates:
 - **LinkedIn:** www.linkedin.com/in/bozhidar
 
 ### 🔖 Badges
-
+[/assets/images/https://www.credly.com/badges/79ac1094-b563-4f15-80bd-3b4efd8ccdf0/public_url](https://www.credly.com/badges/79ac1094-b563-4f15-80bd-3b4efd8ccdf0/public_url)
 
