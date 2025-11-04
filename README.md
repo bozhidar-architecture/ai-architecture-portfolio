@@ -25,7 +25,7 @@ ai-architecture-portfolio/
 ## 🔍 Featured Projects
 
 
-### 1. **Multi-Agent Impact Assessment Report Generator
+### 1. **Multi-Agent Impact Assessment Report Generator**
 
 - **Objective:** Automate impact assessment reporting using a secure, privacy-first multi-agent architecture with **MCP orchestration** and **A2A communication** for seamless agent collaboration.
 
