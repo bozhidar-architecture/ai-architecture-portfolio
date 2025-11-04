@@ -1,5 +1,6 @@
-# ai-architecture-portfolio
+
 # 🌐 AI Architecture Portfolio
+# ai-architecture-portfolio
 
 Welcome to my **AI Architecture Portfolio**, showcasing solution designs, governance frameworks, and business-to-technical mappings for **AI-driven enterprise and telco use cases**.  
 This portfolio demonstrates **architecture thinking**, **Responsible AI principles**, and **integration strategies**—not coding.
