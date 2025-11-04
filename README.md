@@ -23,33 +23,39 @@ ai-architecture-portfolio/
 │── assets/                  # Diagrams and visuals
 ```
 ## 🔍 Featured Projects
-### 1. **AI-Driven SLA Monitoring for Telco**
-- **Objective:** Predict SLA breaches using AI analytics.
-- **Deliverables:**  
+
+
+### 1. **Multi-Agent Impact Assessment Report Generator
+
+- **Objective:** Automate impact assessment reporting using a secure, privacy-first multi-agent architecture with **MCP orchestration** and **A2A communication** for seamless agent collaboration.
+
+- **Deliverables:**
   - Architecture diagram (Mermaid + PNG)
   - Requirements mapping (functional + non-functional)
-  - Governance checklist for compliance
-- **Business Impact:** Reduced SLA penalties by proactive monitoring.
+  - Governance checklist for PII compliance
 
-### 2. **Intelligent Service Provisioning Workflow**
-- **Objective:** Automate provisioning of enterprise connectivity services.
-- **Deliverables:**  
-  - Integration blueprint (OSS/BSS + AI decision engine)
-  - Cost-benefit analysis
-  - Risk mitigation plan
+- **Business Impact:** Accelerates assessment workflows while ensuring data privacy and regulatory compliance.
+
+- **Core Components:**
+  - GenAI Chatbot (Front Agent): Conversational interface for guiding users through the assessment process.
+  - Customer Config Anonymizer Agent: Backend service that sanitises inputs to remove PII before processing.
+  - File Report Generation Agent: Creates structured, shareable reports (PDF/DOCX) based on validated inputs.
+  - MCP (Model Control Plane): Coordinates agent lifecycle, policy enforcement, and resource allocation.
+  - A2A Communication Layer: Enables secure, standardised messaging between agents for task orchestration.
 
 ## 🛠 Tools & Frameworks
-- **Architecture Design:** Lucidchart, Draw.io, Mermaid
-- **AI Services:** Azure AI, Cognitive Services, OpenAI
+- **Architecture Design:** Draw.io, Mermaid
+- **AI Services:** Azure AI, Cognitive Services, OpenAI, Copilot Studio
 - **Governance:** Responsible AI principles
 - **Portfolio Hosting:** GitHub Pages
 
 ## 📜 Certifications
 
+- ✅ Microsoft Certified: Azure AI Engineer Associate (AI-102)
+- ✅ Microsoft Certified: Azure Network Engineer Associate (AZ-700)
 - ✅ Microsoft Certified: Azure AI Fundamentals (AI-900)
-- ✅ Microsoft Certified: Azure Network Engineer Associate
-- ✅ Microsoft Certified: Security, Compliance, and Identity Fundamentals
-- ✅ Microsoft Certified: Azure Fundamentals
+- ✅ Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900)
+- ✅ Microsoft Certified: Azure Fundamentals (AZ-900)
   
 - ✅ KCNA: Kubernetes and Cloud Native Associate
 
@@ -57,16 +63,12 @@ ai-architecture-portfolio/
 - ✅ Red Hat Certified OpenShift Administrator
 - ✅ Red Hat Certified Specialist in Containers and Kubernetes
   
-- 🎯 Next: Azure AI Engineer Associate (AI-102), Responsible AI Certification
+- 🎯 Next: Responsible AI Certification
 
 ## 🚧 Work in Progress
 This portfolio is evolving. Upcoming updates:
-- [ ] Upload architecture diagrams for SLA Monitoring
+- [ ] Upload architecture diagrams
 - [ ] Add Responsible AI governance checklist
-- [ ] Publish ROI analysis for provisioning workflow
-- [ ] Complete AI-102 certification
-- [ ] Update badges
-
 
 ## 🌍 Connect
 - **LinkedIn:** www.linkedin.com/in/bozhidar
