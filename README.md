@@ -25,8 +25,39 @@ ai-architecture-portfolio/
 ```
 ## 🔍 Featured Projects
 
+### 1. **MCC Releases Compass – AI Agent for MCC Upgrade Impact**
+**Status:** ✅ Completed  
+**Objective:** Automate MCC (Affirmed Networks Mobile Content Cloud) upgrade impact assessments using an AI agent with strict MCC-only scope and evidence-based outputs.
 
-### 1. **Multi-Agent Impact Assessment Report Generator**
+**Key Features:**
+- **Structured Reports**: Summary, Preconditions, Features & Fixes, Deprecations, Sources.
+- **Version-Aware Analysis**: Semantic versioning support.
+- **Evidence-Based**: SharePoint-hosted MCC Release Notes (PDF/CSV).
+- **Refusal Logic**: Out-of-scope queries rejected.
+
+**Architecture Highlights:**
+- **RAG Pipeline**: Hybrid retrieval (semantic + keyword).
+- **Citation Enforcement**: Deep links to MCC documentation.
+- **Output Validation**: Mandatory Markdown template.
+
+**Business Impact:**
+- Speeds up upgrade planning and risk assessment.
+- Reduces manual effort in compiling release notes.
+
+---
+
+#### 📌 Example Use Cases
+- *Upgrade impact MCC 15.0 → 16.2 for Gx interface.*
+- *List anomalies for MCC 15.x affecting VoLTE.*
+- *Show new features in MCC 16.1 vs 15.8.*
+
+---
+
+🛠 **Tools:** Azure AI, SharePoint, Responsible AI Principles  
+
+---
+
+### 2. **Multi-Agent Impact Assessment Report Generator**
 
 - **Objective:** Automate impact assessment reporting using a secure, privacy-first multi-agent architecture with **MCP orchestration** and **A2A communication** for seamless agent collaboration.
 
@@ -43,6 +74,8 @@ ai-architecture-portfolio/
   - File Report Generation Agent: Creates structured, shareable reports (PDF/DOCX) based on validated inputs.
   - MCP (Model Control Plane): Coordinates agent lifecycle, policy enforcement, and resource allocation.
   - A2A Communication Layer: Enables secure, standardised messaging between agents for task orchestration.
+
+---
 
 ## 🛠 Tools & Frameworks
 - **Architecture Design:** Draw.io, Mermaid
