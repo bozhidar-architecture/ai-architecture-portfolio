@@ -15,7 +15,7 @@ Welcome to my **AI Architecture Portfolio**, showcasing solution designs, govern
 
 This portfolio demonstrates **architecture thinking**, **Responsible AI principles**, and **integration strategies** — not coding.
 
-> *All architectures and case studies presented here are original work created for demonstration purposes. They reflect general industry patterns and publicly available cloud services — not proprietary implementations.*
+> *All architectures presented here are original reference designs inspired by real-world implementations in enterprise telco environments. They reflect general industry patterns and publicly available cloud services.*
 
 ---
 
@@ -67,6 +67,7 @@ AI governance reviews (Responsible AI, threat modeling, accessibility, privacy, 
   | Version-aware retrieval | Semantic versioning used as a filter for precise document retrieval |
   | No-invention policy | Unknown values labeled explicitly — no hallucinated data |
 
+- **Scope:** Led architecture and design within a cross-functional team.
 - **Value Proposition:** Reduces upgrade impact analysis from hours of manual review to minutes, with full citation traceability.
 
 ### 2. Privacy-First Network Configuration Analyzer
@@ -90,6 +91,8 @@ AI governance reviews (Responsible AI, threat modeling, accessibility, privacy, 
   | Progressive disclosure | URL parameter flags unlock advanced UI; default is MVP mode |
   | Regex-driven analysis | Deterministic, auditable pattern matching — no ML black box needed |
 
+- **Scope:** Led architecture and development within a cross-functional team.
+- **Why not AI?** This project demonstrates a critical architecture skill: knowing when AI is unnecessary. Pattern matching against known signatures is deterministic, auditable, and deployable in restricted environments where cloud AI services aren't an option.
 - **Value Proposition:** Enables secure configuration sharing and feature auditing without exposing sensitive network data, deployable in restricted environments with zero infrastructure.
 
 ### 3. Embeddable RAG Chatbot for Telco Support Engineering
@@ -123,6 +126,8 @@ AI governance reviews (Responsible AI, threat modeling, accessibility, privacy, 
   | CORS at infrastructure level | Handled in Container Apps Bicep, not application middleware |
   | Two-repo architecture | Separation of architecture decisions (ADRs, governance) from implementation |
 
+- **Scope:** Led architecture for a cross-functional team spanning design, development, and DevOps.
+- **Trade-off:** *Why Cosmos DB HPK over simpler partition strategies?* At scale beyond 20GB per tenant, standard partition keys create hot partitions. HPK enables hierarchical isolation without cross-partition queries.
 - **Value Proposition:** Transforms support engineering from manual documentation lookup to instant, citation-backed AI answers — with enterprise security, multi-tenancy, and full observability built in.
 
 - **Architecture Diagram:**
@@ -223,6 +228,8 @@ graph TB
   | Power BI on semantic model | Ticket analytics from curated lakehouses |
   | Phased rollout | Features explicitly tagged as "not yet built" — honest scope management |
 
+- **Scope:** Led end-to-end architecture across data engineering, AI, and frontend teams.
+- **Trade-off:** *Why Microsoft Fabric over Azure Data Factory?* Fabric's notebook-first workflow aligned better with the team's data science skillset and enabled faster iteration than ADF's pipeline-centric model.
 - **Value Proposition:** Cuts triage time and improves classification accuracy while keeping engineers in control. The shared data pipeline and AI Search infrastructure creates a foundation that multiple AI applications can build on.
 
 - **Architecture Diagram:**
