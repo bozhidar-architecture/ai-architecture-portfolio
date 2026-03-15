@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"name": "AI Architecture Portfolio"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.DS_Store": true
+		},
+		"editor.wordWrap": "on",
+		"markdown.preview.breaks": true
+	}
+}
