@@ -4,6 +4,11 @@ title: AI Architecture Portfolio
 description: AI solution designs, governance frameworks, and business-to-technical mappings for enterprise and telco use cases.
 ---
 
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'base', themeVariables: { primaryColor: '#e8f4f8', primaryTextColor: '#1a1a2e', primaryBorderColor: '#4a90d9', lineColor: '#4a90d9', secondaryColor: '#f0f7ee', tertiaryColor: '#fff8e7' }});
+</script>
+
 # AI Architecture Portfolio
 
 Welcome to my **AI Architecture Portfolio**, showcasing solution designs, governance frameworks, and business-to-technical mappings for **AI-driven enterprise and telco use cases**.
@@ -120,6 +125,51 @@ AI governance reviews (Responsible AI, threat modeling, accessibility, privacy, 
 
 - **Value Proposition:** Transforms support engineering from manual documentation lookup to instant, citation-backed AI answers — with enterprise security, multi-tenancy, and full observability built in.
 
+- **Architecture Diagram:**
+
+<div class="mermaid">
+graph TB
+    subgraph "Frontend"
+        SWA["Azure Static Web Apps<br/>(React 18 + Fluent UI v9)"]
+    end
+
+    subgraph "Backend"
+        ACA["Azure Container Apps<br/>(FastAPI async)"]
+    end
+
+    subgraph "AI Services"
+        AOAI_GPT["Azure OpenAI<br/>GPT-4o"]
+        AOAI_EMB["Azure OpenAI<br/>ada-002 Embeddings"]
+        AIS["Azure AI Search<br/>(Hybrid: Vector + Keyword)"]
+        FOUNDRY["Azure AI Foundry Hub<br/>(Model Governance)"]
+    end
+
+    subgraph "Data & Storage"
+        COSMOS["Azure Cosmos DB (HPK)<br/>(Multi-tenant History)"]
+        DOCS["Technical Documentation<br/>(CLI, XML, Support Docs)"]
+    end
+
+    subgraph "Security & Observability"
+        ENTRA["Microsoft Entra ID<br/>(JWT + Managed Identity)"]
+        KV["Azure Key Vault"]
+        APPINS["App Insights +<br/>Log Analytics"]
+    end
+
+    SWA -->|"API proxy"| ACA
+    ACA -->|"Streaming chat"| AOAI_GPT
+    ACA -->|"Embed query"| AOAI_EMB
+    AOAI_EMB -->|"Vector search"| AIS
+    ACA -->|"Hybrid retrieval"| AIS
+    DOCS -->|"Indexed"| AIS
+    ACA -->|"Read/write history"| COSMOS
+    FOUNDRY -.->|"TPM quotas"| AOAI_GPT
+    ENTRA -.->|"Auth"| ACA
+    ENTRA -.->|"Managed Identity"| AOAI_GPT
+    ENTRA -.->|"Managed Identity"| COSMOS
+    KV -.->|"Secrets"| ACA
+    ACA -.->|"Telemetry"| APPINS
+</div>
+
 ### 4. Multi-Agent Support Ticket Triage & Resolution System
 - **Scenario:** A telecom support team handling thousands of tickets needs to triage faster, classify severity accurately, surface relevant knowledge, and reduce repetitive diagnostic work — all without removing the engineer from the decision loop.
 - **Architecture Pattern:** Multi-agent system with independently invocable AI agents (classification, knowledge search, troubleshooting, summarization) embedded as a sidebar widget in the existing ticketing platform. Human-in-the-loop: engineers approve all AI-suggested actions before write-back.
@@ -174,6 +224,67 @@ AI governance reviews (Responsible AI, threat modeling, accessibility, privacy, 
   | Phased rollout | Features explicitly tagged as "not yet built" — honest scope management |
 
 - **Value Proposition:** Cuts triage time and improves classification accuracy while keeping engineers in control. The shared data pipeline and AI Search infrastructure creates a foundation that multiple AI applications can build on.
+
+- **Architecture Diagram:**
+
+<div class="mermaid">
+graph TB
+    subgraph "Ticketing Platform"
+        FD["Third-Party<br/>Ticketing System"]
+        WIDGET["Sidebar Widget<br/>(React)"]
+    end
+
+    subgraph "Event Processing"
+        WH["Serverless Event Handlers<br/>(Create / Update / Conversation)"]
+        GW["API Gateway /<br/>Orchestrator"]
+    end
+
+    subgraph "AI Agents (Independent)"
+        A1["Classification<br/>Agent"]
+        A2["Knowledge Search<br/>Agent"]
+        A3["Troubleshooting<br/>Agent"]
+        A4["Summary<br/>Agent"]
+    end
+
+    subgraph "Stage 1 — Data Ingestion"
+        LA["Logic App<br/>Connectors"]
+        COSMOS1["Cosmos DB<br/>(18+ Raw Collections)"]
+        BLOB["Blob Storage<br/>(Manuals)"]
+    end
+
+    subgraph "Stage 2 — ETL & Analytics"
+        MIRROR["Cosmos DB<br/>Mirror"]
+        FABRIC["Microsoft Fabric<br/>Notebooks"]
+        LAKE["Curated Lakehouses<br/>(Tickets, Articles, Forums)"]
+        SEM["Semantic Model"]
+        PBI["Power BI<br/>Reports"]
+        COSMOS2["Cosmos DB<br/>(Curated Data)"]
+    end
+
+    subgraph "Stage 3 — AI Search"
+        DS["5 Data Sources"]
+        IDX["5 Indexers"]
+        SEARCH["Azure AI Search<br/>(Unified Index)"]
+    end
+
+    FD -->|"Webhooks"| WH
+    WH --> GW
+    GW --> A1 & A2 & A3 & A4
+    A1 & A2 & A3 & A4 -->|"HITL approval"| WIDGET
+    WIDGET -->|"Write-back"| FD
+
+    FD --> LA --> COSMOS1
+    BLOB --> COSMOS1
+    COSMOS1 --> MIRROR --> FABRIC --> LAKE
+    LAKE --> SEM --> PBI
+    LAKE --> COSMOS2
+    COSMOS2 --> DS --> IDX --> SEARCH
+
+    A2 -->|"Semantic search"| SEARCH
+    A3 -->|"RAG retrieval"| SEARCH
+
+    linkStyle 12,13,14,15,16,17,18,19 stroke:#2ecc71
+</div>
 
 ---
 
