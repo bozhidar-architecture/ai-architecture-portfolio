@@ -8,8 +8,9 @@ AI solution designs, governance frameworks, and business-to-technical mappings f
 
 ```
 ├── index.md                  # Portfolio homepage (GitHub Pages)
+├── _config.yml               # Jekyll theme configuration
 ├── governance-compliance/    # Governance framework & compliance docs
-└── assets/images/            # Diagrams and visuals
+└── assets/images/            # Badges and visuals
 ```
 
 ## Local Preview

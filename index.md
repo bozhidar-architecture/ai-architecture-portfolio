@@ -40,9 +40,7 @@ These principles come from two decades of building and operating carrier-grade t
 
 ---
 
-## Portfolio
-
-### [Governance & Compliance](governance-compliance/)
+## [Governance & Compliance →](governance-compliance/)
 AI governance reviews (Responsible AI, threat modeling, accessibility, privacy, open-source license compliance) and automated architecture drift detection.
 
 ---
