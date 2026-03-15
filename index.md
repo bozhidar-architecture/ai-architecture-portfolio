@@ -42,14 +42,8 @@ These principles come from two decades of building and operating carrier-grade t
 
 ## Portfolio
 
-### [Solution Architectures](solution-architectures/)
-Architecture diagrams, integration blueprints, and technical design documents.
-
 ### [Governance & Compliance](governance-compliance/)
 AI governance reviews (Responsible AI, threat modeling, accessibility, privacy, open-source license compliance) and automated architecture drift detection.
-
-### [Business Cases](business-cases/)
-ROI models, cost-benefit analyses, and business impact assessments.
 
 ---
 

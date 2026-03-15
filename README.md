@@ -8,9 +8,7 @@ AI solution designs, governance frameworks, and business-to-technical mappings f
 
 ```
 ├── index.md                  # Portfolio homepage (GitHub Pages)
-├── solution-architectures/   # Architecture diagrams & integration docs
-├── governance-compliance/    # Responsible AI checklists & frameworks
-├── business-cases/           # ROI models & cost-benefit analyses
+├── governance-compliance/    # Governance framework & compliance docs
 └── assets/images/            # Diagrams and visuals
 ```
 

@@ -77,10 +77,10 @@ Developers often see governance as friction. The key is **making compliance auto
 
 These governance practices are actively applied across portfolio projects:
 
-- **[Embeddable RAG Chatbot](../solution-architectures/)** — Full Responsible AI review, threat model for prompt injection, PII-safe logging, managed identity enforcement, accessibility-compliant widget
-- **[Multi-Agent Triage System](../solution-architectures/)** — Human-in-the-loop enforcement, dedicated RAI feature, privacy review across 18+ data collections, architecture drift checks against ADRs
-- **[Software Release Impact Advisor](../solution-architectures/)** — Strict grounding policy (no hallucination), domain-scoped refusal patterns, mandatory citation in outputs
-- **[Network Configuration Analyzer](../solution-architectures/)** — Privacy-first architecture, zero telemetry, PII anonymization as a core feature
+- **[Embeddable RAG Chatbot](../#3-embeddable-rag-chatbot-for-telco-support-engineering)** — Full Responsible AI review, threat model for prompt injection, PII-safe logging, managed identity enforcement, accessibility-compliant widget
+- **[Multi-Agent Triage System](../#4-multi-agent-support-ticket-triage--resolution-system)** — Human-in-the-loop enforcement, dedicated RAI feature, privacy review across 18+ data collections, architecture drift checks against ADRs
+- **[Software Release Impact Advisor](../#1-declarative-ai-agent-software-release-impact-advisor)** — Strict grounding policy (no hallucination), domain-scoped refusal patterns, mandatory citation in outputs
+- **[Network Configuration Analyzer](../#2-privacy-first-network-configuration-analyzer)** — Privacy-first architecture, zero telemetry, PII anonymization as a core feature
 
 ---
 
