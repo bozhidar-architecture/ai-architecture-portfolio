@@ -1,7 +1,7 @@
 ---
 layout: default
 title: AI Architecture Portfolio
-description: AI solution designs, governance frameworks, and business-to-technical mappings for enterprise and telco use cases.
+description: Carrier-grade AI solution architecture portfolio — agentic AI, RAG, multi-agent systems, and governance frameworks for enterprise telco. 20+ years of mission-critical infrastructure applied to AI.
 ---
 
 <script type="module">
@@ -332,5 +332,10 @@ The most scalable thing an architect can do isn't building one solution — it's
 
 ## Badges
 
+**SkillUp AI Vibe Coding Challenge** — Recognised for demonstrating AI-assisted development skills in a competitive challenge.
+
 ![SkillUp AI Vibe Coding Challenge](assets/images/skillup-ai-vibe-coding-challenge.png)
+
+**Accessibility in Action** — Committed to building inclusive, WCAG-compliant AI interfaces.
+
 ![Accessibility in Action](assets/images/accessibility-in-action.png)
