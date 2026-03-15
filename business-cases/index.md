@@ -12,10 +12,10 @@ ROI models, cost-benefit analyses, and business impact assessments demonstrating
 
 ## Analyses
 
-### SLA Monitoring — Business Impact Assessment
+### Predictive SLA Analytics — Business Impact Assessment
 *Coming soon — ROI model showing cost savings from proactive SLA breach prediction.*
 
-### Service Provisioning — Cost-Benefit Analysis
+### AI-Assisted Service Provisioning — Cost-Benefit Analysis
 *Coming soon — comparison of manual vs. AI-automated provisioning workflows.*
 
 ---

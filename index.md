@@ -10,6 +10,8 @@ Welcome to my **AI Architecture Portfolio**, showcasing solution designs, govern
 
 This portfolio demonstrates **architecture thinking**, **Responsible AI principles**, and **integration strategies** — not coding.
 
+> *All architectures and case studies presented here are original work created for demonstration purposes. They reflect general industry patterns and publicly available cloud services — not proprietary implementations.*
+
 ---
 
 ## About Me
@@ -33,18 +35,20 @@ ROI models, cost-benefit analyses, and business impact assessments.
 
 ---
 
-## Featured Projects
+## Reference Architectures
 
-### 1. AI-Driven SLA Monitoring for Telco
-- **Objective:** Predict SLA breaches using AI analytics.
+*Drawing on experience in enterprise telco environments and based on Azure reference architectures and industry best practices.*
+
+### 1. Predictive SLA Analytics
+- **Scenario:** Proactively detect and prevent SLA breaches using AI-driven analytics in a telco environment.
 - **Deliverables:**
-  - Architecture diagram (Mermaid + PNG)
+  - Reference architecture diagram (Mermaid + PNG)
   - Requirements mapping (functional + non-functional)
   - Governance checklist for compliance
-- **Business Impact:** Reduced SLA penalties by proactive monitoring.
+- **Value Proposition:** Shift from reactive to predictive SLA management.
 
-### 2. Intelligent Service Provisioning Workflow
-- **Objective:** Automate provisioning of enterprise connectivity services.
+### 2. AI-Assisted Service Provisioning
+- **Scenario:** Streamline enterprise connectivity provisioning through AI-powered decision automation.
 - **Deliverables:**
   - Integration blueprint (OSS/BSS + AI decision engine)
   - Cost-benefit analysis

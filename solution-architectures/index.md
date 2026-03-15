@@ -10,12 +10,12 @@ Architecture diagrams, integration blueprints, and technical design documents fo
 
 ---
 
-## Projects
+## Reference Architectures
 
-### AI-Driven SLA Monitoring for Telco
-*Coming soon — architecture diagram, requirements mapping, and integration design.*
+### Predictive SLA Analytics
+*Coming soon — reference architecture diagram, requirements mapping, and integration design.*
 
-### Intelligent Service Provisioning Workflow
+### AI-Assisted Service Provisioning
 *Coming soon — OSS/BSS integration blueprint and decision engine design.*
 
 ---
