@@ -22,7 +22,7 @@ description: AI reference architectures — declarative agents, RAG with determi
   | Strict domain scoping | Agent refuses out-of-scope queries to prevent misuse |
   | Mandatory output template | Consistent 5-section Markdown report for every response |
   | Version-aware retrieval | Semantic versioning used as a filter for precise document retrieval |
-  | No-invention policy | Unknown values labeled explicitly — no hallucinated data |
+  | No-invention policy | Unknown values labelled explicitly — no hallucinated data |
 
 - **Scope:** Led architecture and design within a cross-functional team.
 - **Value Proposition:** Reduces upgrade impact analysis from hours of manual review to minutes, with full citation traceability. It replaced the previous manual process outright, and the same framework was reused to scale impact assessment across additional products.
@@ -136,7 +136,7 @@ flowchart LR
   | Decouple from the ticketing platform | The ticketing system becomes one MCP among many — no custom plugins, no platform lock-in |
   | Two clean abstractions | Skills hold procedural knowledge; MCPs hold system access — interpretation never leaks into adapters |
   | Supervised now, autonomous later | Phase 1 is human-supervised on an internal agent runtime; Phase 2 swaps in an autonomous runtime — an invoker change, not a rewrite |
-  | No central orchestrator | The agent composes via the catalog; one skill or MCP failing degrades only that branch (no single point of failure) |
+  | No central orchestrator | The agent composes via the catalogue; one skill or MCP failing degrades only that branch (no single point of failure) |
   | Reuse over rebuild | Existing in-house MCPs plug in unchanged; a new MCP is built only when nothing in-house fits |
   | Human approves external writes | Phase 1 has exactly one write — the summary post; all ticket, incident and customer-comms changes are applied by the engineer |
   | Audit everything | Every agent, skill, and MCP call is logged with caller identity and outcome |
