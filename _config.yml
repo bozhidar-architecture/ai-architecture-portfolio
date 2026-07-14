@@ -1,0 +1,39 @@
+
+title: "AI Architecture Portfolio"
+description: "Carrier-grade AI solution architecture, governance frameworks, and agentic AI design for enterprise telco"
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "dark"
+search: true
+locale: "en-GB"
+breadcrumbs: true
+og_image: "/assets/images/og-banner.png"
+
+# Hide the RSS "Feed" link in the footer
+atom_feed:
+  hide: true
+
+# GitHub Pages supported plugins
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+author:
+  name: "Bozhidar"
+  bio: "Principal Architect — agentic AI, RAG & governance for enterprise telco"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/bozhidar/"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      toc: true
+      toc_sticky: true
+

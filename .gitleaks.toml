@@ -1,0 +1,15 @@
+# Extend the default gitleaks ruleset, then apply local allowlists.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Allowlisted false positives"
+# Cloudflare Web Analytics beacon token: a PUBLIC site identifier that is meant to
+# be embedded in page HTML and visible to every visitor. It is not a secret and
+# grants no access, so it should not be flagged as a leaked credential.
+regexes = [
+  '''data-cf-beacon=.*4408148afb724089af5c2a5ae9ef9bda''',
+]
+paths = [
+  '''_includes/head/custom\.html''',
+]

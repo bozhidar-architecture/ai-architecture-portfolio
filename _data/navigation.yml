@@ -1,0 +1,11 @@
+main:
+  - title: "Portfolio"
+    url: /
+  - title: "Reference Architectures"
+    url: /reference-architectures/
+  - title: "Governance"
+    url: /governance-compliance/
+  - title: "Projects & Labs"
+    url: /personal-projects/
+  - title: "LinkedIn"
+    url: "https://www.linkedin.com/in/bozhidar/"
