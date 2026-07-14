@@ -1,13 +1,16 @@
 <style>
   .mermaid { cursor: zoom-in; position: relative; }
   .mermaid svg { max-width: 100%; height: auto; }
-  .mermaid::after {
-    content: "⤢ select to enlarge";
+  .mermaid-enlarge-btn {
     position: absolute; top: 6px; right: 10px;
-    font-size: 0.7em; opacity: 0.8; pointer-events: none;
+    font-size: 0.7em; opacity: 0.8;
+    background: rgba(255,255,255,0.85); color: #1a1a2e;
+    border: 1px solid #4a90d9; border-radius: 4px;
+    padding: 2px 8px; cursor: pointer; line-height: 1.4;
   }
-  .mermaid:focus-visible {
-    outline: 2px solid #4a90d9; outline-offset: 2px;
+  .mermaid-enlarge-btn:hover { opacity: 1; }
+  .mermaid-enlarge-btn:focus-visible {
+    outline: 2px solid #4a90d9; outline-offset: 2px; opacity: 1;
   }
   #diagram-lightbox {
     display: none; position: fixed; inset: 0; z-index: 9999;
@@ -41,24 +44,29 @@
 
   await mermaid.run({ querySelector: '.mermaid' });
 
-  // Lightbox: enlarge a diagram via click or keyboard (Enter/Space); close via click,
-  // Enter/Space/Escape, and return focus to the diagram that opened it.
+  // Lightbox: enlarge a diagram via the "Enlarge" button (keyboard/screen-reader path)
+  // or by clicking the diagram itself (mouse convenience); close via the close control,
+  // Escape, or clicking the overlay, and return focus to whatever opened it.
   const overlay = document.createElement('div');
   overlay.id = 'diagram-lightbox';
+  overlay.setAttribute('role', 'dialog');
+  overlay.setAttribute('aria-modal', 'true');
+  overlay.setAttribute('aria-label', 'Enlarged diagram');
+  overlay.setAttribute('tabindex', '-1');
   overlay.innerHTML = '<span class="close-hint" role="button" tabindex="0" aria-label="Close">&times;</span>';
   document.body.appendChild(overlay);
   const closeHint = overlay.querySelector('.close-hint');
 
   let lastTrigger = null;
 
-  const openLightbox = (el) => {
+  const openLightbox = (el, trigger) => {
     const svg = el.querySelector('svg');
     if (!svg) return;
     const clone = svg.cloneNode(true);
     clone.removeAttribute('style');
     overlay.appendChild(clone);
     overlay.classList.add('open');
-    lastTrigger = el;
+    lastTrigger = trigger || el;
     closeHint.focus();
   };
 
@@ -70,17 +78,19 @@
   };
 
   document.querySelectorAll('.mermaid').forEach(el => {
-    el.setAttribute('tabindex', '0');
-    el.setAttribute('role', 'button');
-    el.setAttribute('aria-label', 'Enlarge diagram');
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'mermaid-enlarge-btn';
+    btn.textContent = '⤢ Enlarge';
+    btn.setAttribute('aria-label', 'Enlarge diagram');
+    el.appendChild(btn);
 
-    el.addEventListener('click', () => openLightbox(el));
-    el.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        openLightbox(el);
-      }
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      openLightbox(el, btn);
     });
+
+    el.addEventListener('click', () => openLightbox(el, el));
   });
 
   overlay.addEventListener('click', closeLightbox);
@@ -90,6 +100,20 @@
       closeLightbox();
     }
   });
+
+  // Trap Tab focus inside the overlay while it is open.
+  overlay.addEventListener('keydown', e => {
+    if (e.key !== 'Tab') return;
+    const focusables = Array.from(overlay.querySelectorAll('button, [tabindex="0"]'));
+    if (focusables.length === 0) { e.preventDefault(); return; }
+    e.preventDefault();
+    const idx = focusables.indexOf(document.activeElement);
+    const nextIdx = e.shiftKey
+      ? (idx <= 0 ? focusables.length - 1 : idx - 1)
+      : (idx === focusables.length - 1 ? 0 : idx + 1);
+    focusables[nextIdx].focus();
+  });
+
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape' && overlay.classList.contains('open')) closeLightbox();
   });
