@@ -9,7 +9,8 @@ description: AI reference architectures — declarative agents, RAG with determi
 
 {% include mermaid-lightbox.html %}
 
-*Drawing on experience in enterprise telco environments and based on Azure reference architectures and industry best practices.*
+*Four original reference designs, anonymised from real enterprise-telco work — each
+presented as the decisions and trade-offs that shaped it, not just the boxes and lines.*
 
 ## 1. Declarative AI Agent: Software Release Impact Advisor {#work-release-advisor}
 - **Scenario:** Telco operators upgrading network platform software need to understand new features, bug fixes, deprecations, and known issues across every intermediate release. This agent automates hours of manual document review and produces structured, citation-backed impact assessment reports.
@@ -34,7 +35,7 @@ description: AI reference architectures — declarative agents, RAG with determi
 
   | Capability | Approach |
   |------------|----------|
-  | SKU/License detection | Regex-driven pattern matching across 19 licensed feature signatures |
+  | SKU/Licence detection | Regex-driven pattern matching across 19 licensed feature signatures |
   | Configuration anonymisation | Masks all PII (IPs, hostnames, MACs, phone numbers) for safe sharing |
   | Feature analysis | Parses 18 config sections with visual indicators for configured vs. missing |
 

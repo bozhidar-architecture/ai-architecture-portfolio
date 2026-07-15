@@ -1,5 +1,5 @@
 
-title: "AI Architecture Portfolio"
+title: "Carrier-Grade AI Architecture"
 description: "Carrier-grade AI solution architecture, governance frameworks, and agentic AI design for enterprise telco"
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "dark"
@@ -26,6 +26,13 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/bozhidar/"
+
+# Person structured data (used by jekyll-seo-tag's JSON-LD)
+social:
+  type: Person
+  name: "Bozhidar"
+  links:
+    - "https://www.linkedin.com/in/bozhidar/"
 
 defaults:
   - scope:

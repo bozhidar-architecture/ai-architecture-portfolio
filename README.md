@@ -8,7 +8,7 @@
 
 This repository is the source for the published site. Inside:
 
-- **Reference architectures** — a declarative RAG agent, a privacy-first offline analyzer, a RAG assistant with deterministic CLI validation, and a Skills + MCP triage system
+- **Reference architectures** — a declarative RAG agent, a privacy-first offline configuration analyser, a RAG assistant with deterministic CLI validation, and a Skills + MCP triage system
 - **Governance & compliance** — Responsible AI, threat modelling, privacy, accessibility, and architecture-drift detection
 - **Personal projects** — an always-on transcription pipeline and an AI-assisted, version-controlled edge-network blueprint
 

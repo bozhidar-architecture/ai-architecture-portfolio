@@ -9,7 +9,7 @@ description: Personal AI and infrastructure labs — an always-on cloud transcri
 
 {% include mermaid-lightbox.html %}
 
-*Beyond client work, I build for myself — the same principles, no deadline. It's where "AI-first" and "carrier-grade discipline" stop being slogans and become habits.*
+*Beyond the day job, I build for myself — the same principles, no deadline. It's where "AI-first" and "carrier-grade discipline" stop being slogans and become habits.*
 
 ## Always-On Live Transcription Pipeline {#work-transcription}
 - **What it is:** an always-on personal service that continuously monitors **publicly available** live streams and produces searchable, **speaker-attributed** transcripts — fully unattended, 24/7. It operates only on public streams; no private audio is processed.
@@ -42,7 +42,7 @@ flowchart LR
     style RES fill:#FFF4E0,stroke:#E89B3C,stroke-width:2px
 </div>
 
-*Runs entirely in the cloud, forever and unattended — no local client involved. A serverless watcher spins up isolated, ephemeral compute per stream; each audio segment is transcribed on a blob trigger and stored as a searchable, speaker-attributed transcript, with an LLM layered on top for Q&A and summaries. Scale-to-zero when idle, self-healing when things drop.*
+*Runs entirely in the cloud, continuously and unattended — no local client involved. A serverless watcher spins up isolated, ephemeral compute per stream; each audio segment is transcribed on a blob trigger and stored as a searchable, speaker-attributed transcript, with an LLM layered on top for Q&A and summaries. Scale-to-zero when idle, self-healing when things drop.*
 
 ## Infrastructure-as-Code Edge Network — an AI-Assisted Delivery Blueprint {#work-edge-network}
 - A network gateway run **entirely as code** — and a **reference blueprint** for **AI-first** infrastructure delivery in telecom, network, and delivery organisations. The Git repo is the **single source of truth**: every change is **version-controlled, staged, snapshot-backed, and reversible with one command**, drafted with AI assistance but **reviewed and verified by a human**, with secrets kept out of the repo and a full audit trail.

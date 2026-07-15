@@ -1,5 +1,5 @@
 ---
-title: "AI Architecture Portfolio"
+title: "Carrier-Grade AI Architecture"
 layout: single
 author_profile: true
 toc: true
@@ -10,11 +10,14 @@ description: AI solution architecture with carrier-grade discipline — agentic 
 
 {% include mermaid-lightbox.html %}
 
-Welcome to my **AI Architecture Portfolio**, showcasing solution designs, governance frameworks, and business-to-technical mappings for **AI-driven enterprise and telco use cases**.
+I design AI systems the way telco networks are built: **to stay up**. Twenty years of
+carrier-grade mobile packet core and enterprise architecture, now applied to **agentic AI,
+RAG, and the governance to run them responsibly** — cloud-native where it fits,
+**sovereign and air-gapped where it's required**.
 
-This portfolio demonstrates **architecture thinking**, **Responsible AI principles**, and **integration strategies** — depth of design over implementation detail. (The hands-on builds live in [Personal Projects & Labs](personal-projects/).)
-
-> Carrier-grade discipline applied to AI: cloud-native where it fits, **sovereign and air-gapped where it's required**. Twenty years of mission-critical telco infrastructure, now aimed at the systems the cloud can't reach.
+This portfolio is the design work — architecture decisions, trade-offs, and Responsible AI
+built in from the start. (The hands-on builds live in
+[Personal Projects & Labs](personal-projects/).)
 
 ## Selected Work
 
@@ -98,7 +101,7 @@ These principles come from two decades of building and operating carrier-grade t
 | **Operationally simple** | If it's hard to operate, it's badly designed. Observability, structured logging, and clear runbooks from day one |
 | **Built to be maintained** | Architecture decisions documented (ADRs), infrastructure as code, automated drift detection |
 | **Resilient by default** | Retry policies, circuit breakers, graceful fallbacks — assume failure will happen |
-| **Compliance-native** | Responsible AI, accessibility, privacy, and license compliance integrated from the start — not an afterthought |
+| **Compliance-native** | Responsible AI, accessibility, privacy, and licence compliance integrated from the start — not an afterthought |
 
 ---
 
@@ -113,11 +116,8 @@ These principles come from two decades of building and operating carrier-grade t
 ## Tools & Frameworks
 
 - **AI & Agentic Platforms:** Azure AI Foundry, Microsoft Copilot Studio, OpenAI, RAG patterns, semantic re-ranking
-- **AI-Assisted Development:** VS Code, GitHub Copilot, MCP (Model Context Protocol) integrations, prompt engineering
-- **Architecture Design:** Lucidchart, Draw.io, Mermaid
-- **DevOps & Collaboration:** Azure DevOps, Git, CI/CD pipelines
-- **Governance:** Responsible AI principles, threat modelling, privacy & license compliance
-- **Portfolio Hosting:** GitHub Pages
+- **AI-Assisted Development:** GitHub Copilot and MCP (Model Context Protocol) integrations — spec-driven, AI-first workflows
+- **Governance:** Responsible AI principles, threat modelling, privacy & licence compliance
 
 ---
 
@@ -138,7 +138,7 @@ These principles come from two decades of building and operating carrier-grade t
 
 ## AI Enablement & Organisational Impact
 
-Beyond building solutions, a core part of my impact is **enabling others** — showing engineers with no coding background what they can achieve with AI tools and modern development practices. I believe the clearest divide over the next decade will be between organisations that adopt an **AI-first mindset** and those that treat AI as a bolt-on: the former compound their advantage, the latter fall behind.
+Beyond building solutions, a core part of my impact is **enabling others** — showing engineers with no coding background what they can achieve with AI tools and modern development practices.
 
 <div class="mermaid">
 flowchart LR

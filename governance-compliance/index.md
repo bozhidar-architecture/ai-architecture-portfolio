@@ -20,13 +20,13 @@ Every AI solution I architect goes through a structured review covering five dim
 - Fairness and bias assessment across model outputs
 - Transparency requirements — can users understand why the AI responded as it did?
 - Human oversight — where are the escalation points?
-- Grounding validation — are responses citation-backed with no hallucination?
+- Grounding validation — are responses grounded and citation-backed, with unsupported answers refused rather than guessed?
 - Content filtering and safety boundaries
 
-### 2. Open-Source & License Compliance
-- Critical when development is AI-assisted (LLM-generated code may introduce copyleft or restrictive licenses without developer awareness)
-- Automated scanning of dependencies and generated code for license compatibility
-- Policy enforcement: approved vs. restricted license categories
+### 2. Open-Source & Licence Compliance
+- Critical when development is AI-assisted (LLM-generated code may introduce copyleft or restrictive licences without developer awareness)
+- Automated scanning of dependencies and generated code for licence compatibility
+- Policy enforcement: approved vs. restricted licence categories
 - Audit trail for AI-generated code contributions
 
 ### 3. Threat Modelling
@@ -66,7 +66,7 @@ One of the biggest governance challenges: **code drifts from agreed architecture
 | Security patterns | Managed Identity usage, no hardcoded secrets, CORS at infra level |
 | Service boundaries | Only approved Azure services deployed, no shadow IT |
 | Data handling | PII redaction in place, encryption at rest, logging policies followed |
-| Code provenance | AI-generated code scanned for license compliance |
+| Code provenance | AI-generated code scanned for licence compliance |
 | Observability | App Insights instrumented, structured logging, no PII in telemetry |
 
 ### Why This Matters
@@ -78,10 +78,10 @@ Developers often see governance as friction. The key is **making compliance auto
 
 These governance practices are actively applied across portfolio projects:
 
-- **Network Platform RAG Assistant** — Responsible AI review, prompt-injection threat model, deterministic command validation (no hallucinated CLI), PII-safe logging, managed identity enforcement, private networking, and red-team testing
-- **Skills + MCP Triage Assistant** — human-supervised agent with all external writes gated to the engineer, audit logging across every skill and MCP call, and architecture-conformance checks against ADRs
-- **Software Release Impact Advisor** — Strict grounding policy (no hallucination), domain-scoped refusal patterns, mandatory citation in outputs
-- **Network Configuration Analyzer** — Privacy-first architecture, zero telemetry, PII anonymisation as a core feature
+- **[Network Platform RAG Assistant](../reference-architectures/#work-rag-assistant)** — STRIDE threat model including prompt injection, red-team test suite, PII-safe logging, and managed identity with private networking enforced by design
+- **[Skills + MCP Triage Assistant](../reference-architectures/#work-triage-assistant)** — architecture-conformance checks against the ADR set; every external write gated to the engineer
+- **[Software Release Impact Advisor](../reference-architectures/#work-release-advisor)** — domain-scoped refusal patterns and mandatory citations in every output
+- **[Configuration Analyzer](../reference-architectures/#work-config-analyzer)** — privacy as the core feature: zero telemetry, in-browser processing, PII anonymisation built in
 
 ---
 
