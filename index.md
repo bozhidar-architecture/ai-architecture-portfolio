@@ -125,11 +125,9 @@ These principles come from two decades of building and operating carrier-grade t
 
 *AI-specific credentials only — non-AI certifications are not listed here.*
 
-- ✅ [Microsoft Certified: Agentic AI Business Solutions Architect (AB-100)](https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/)
-- ✅ [Microsoft Certified: Azure AI Engineer Associate (AI-102)](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/)
-- ✅ [Microsoft Certified: Azure AI Fundamentals (AI-900)](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/)
-
-<!-- TODO (owner): these link to the generic Microsoft Learn certification pages. Swap in your personal transcript/verification links if you'd rather link those instead. -->
+- ✅ [Microsoft Certified: Agentic AI Business Solutions Architect (AB-100)](https://learn.microsoft.com/en-us/users/bozhidargeorgiev/credentials/c963d0efb76f34f0)
+- ✅ [Microsoft Certified: Azure AI Engineer Associate (AI-102)](https://learn.microsoft.com/en-gb/users/bozhidargeorgiev/credentials/d6671608d64ec2c2)
+- ✅ [Microsoft Certified: Azure AI Fundamentals (AI-900)](https://learn.microsoft.com/en-gb/users/bozhidargeorgiev/credentials/95c8cffad32b1d1a)
 
 ### Continuing Development
 - 🔄 Working through **Anthropic Academy's Claude courses** toward the **Claude Certified Architect — Foundations (CCA-F)** certification, to broaden multi-vendor agentic-architecture fluency on top of AB-100
