@@ -71,7 +71,7 @@ flowchart LR
 - **Background:** 20+ years in telco mobile packet core, carrier-grade infrastructure, and enterprise architecture — 25+ operator and enterprise networks across 25 countries and six continents, some still carrying production traffic more than a decade after go-live
 - **Focus:** Agentic AI design, declarative agent architectures, AI-assisted development workflows, and the enablement to make teams AI-first
 - **Mindset:** Every solution is designed with mission-critical principles — because AI systems serving telecom operators inherit the same availability and resilience expectations as the networks they support.
-- **Availability:** Open to new opportunities
+- **Availability:** Contract, consulting and advisory engagements, as well as permanent roles — remote, or hybrid from Sofia
 - **Connect:** [LinkedIn →](https://www.linkedin.com/in/bozhidar/)
 
 ---
