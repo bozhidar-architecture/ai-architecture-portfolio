@@ -10,7 +10,7 @@ description: AI solution architecture with carrier-grade discipline — agentic 
 
 {% include mermaid-lightbox.html %}
 
-I design AI systems the way telco networks are built: **to stay up**. Twenty years of
+I design AI systems the way telco networks are built: **to stay up**. Twenty-plus years of
 carrier-grade mobile packet core and enterprise architecture, now applied to **agentic AI,
 RAG, and the governance to run them responsibly** — cloud-native where it fits,
 **sovereign and air-gapped where it's required**.
@@ -68,9 +68,10 @@ flowchart LR
 ## About Me
 
 - **Role:** Principal Architect
-- **Background:** 20+ years in telco mobile packet core, carrier-grade infrastructure, and enterprise architecture
+- **Background:** 20+ years in telco mobile packet core, carrier-grade infrastructure, and enterprise architecture — 25+ operator and enterprise networks across 25 countries and six continents, some still carrying production traffic more than a decade after go-live
 - **Focus:** Agentic AI design, declarative agent architectures, AI-assisted development workflows, and the enablement to make teams AI-first
 - **Mindset:** Every solution is designed with mission-critical principles — because AI systems serving telecom operators inherit the same availability and resilience expectations as the networks they support.
+- **Availability:** Open to new opportunities
 - **Connect:** [LinkedIn →](https://www.linkedin.com/in/bozhidar/)
 
 ---
